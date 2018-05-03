@@ -1,0 +1,39 @@
+-
+  var myFullName= 'Nicolae Totalca'
+  var myJobTitle = 'Web Developer'
+  var socialList = [
+    {
+      "icon": "facebook2",
+       "url": "https://facebook.com/nicolaetotalca"
+    },
+    {
+      "icon": "twitter",
+       "url": "https://twitter.com/nicolaetotalca"
+    },
+    {
+      "icon": "google-plus2",
+       "url": "https://www.linkedin.com/in/nicolaetotalca/"
+    },
+    {
+      "icon": "linkedin",
+       "url": "https://www.linkedin.com/in/nicolaetotalca/"
+    },
+    {
+      "icon": "github",
+       "url": "https://github.com/totalca"
+    },
+    {
+      "icon": "earth",
+       "url": "https://nicolaetotalca.com"
+    }
+  ]
+#landing-page
+.landing-page
+  .landing-page__wrapper
+    h1.landing-page__name=myFullName
+    h2.landing-page__title=myJobTitle
+    ul.landing-page__social
+      each social in socialList
+        li.landing-page_item
+          label.landing-page__label(for="")
+            span(class=`my-cv__icon--${social.icon}`)
